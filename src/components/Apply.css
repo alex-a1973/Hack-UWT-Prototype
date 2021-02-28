@@ -1,5 +1,89 @@
 .apply-container {
     height: 100vh;
     width: 100vw;
-    background-color: #FFF;
+    background-color: #282C34;
+}
+
+.modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: #282C34;
+    padding-top: 50px;
+}
+
+.modal-content {
+    background-color: #FEFEFE;
+    margin: 5% auto 15% auto;
+    width: 80%;
+}
+
+.form-container {
+    padding: 16px;
+}
+
+.form-container > h1 {
+    letter-spacing: 5px;
+    font-style: bold;
+    font-size: 2rem;
+    color: #282C34;
+}
+
+.form-container > hr {
+    margin: 10px;
+    border: 1px solid #F1F1F1;
+}
+
+input[type="text"], input[type="password"], input[type="email"], input[type="tel"] {
+    width: 100%;
+    display: inline-block;
+    background-color: #F1F1F1;
+    border: none;
+    padding: 16px;
+    margin: 5px 0 22px 0;
+}
+
+input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus, input[type="tel"]:focus {
+    background-color: #DDD;
+    outline: none;
+}
+
+.radio-div {
+    margin-bottom: 16px
+}
+
+.radio-div > label {
+    margin-right: 16px;
+}
+
+.radio-div > input {
+    margin-right: 5px;
+}
+
+#shirt-size-label {
+    margin-right: 16px
+}
+
+#shirt-size-dropdown {
+    padding: 5px;
+    border: 1px solid #111;
+}
+
+.register-btn {
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    background-color: #4B2E83;
+    margin: 16px auto 16px auto;
+    padding: 14px 20px;
+    color: #FFF;
+    opacity: 0.9;
+    transition: all 0.5s;
+}
+
+.register-btn:hover {
+    opacity: 1;
 }
