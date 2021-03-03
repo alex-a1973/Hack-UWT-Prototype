@@ -1,0 +1,39 @@
+.registrants-container {
+    background-color: #282C34;
+    width: 100vw;
+    height: 100vh;
+    color: #EEE;
+}
+
+.registrants-table {
+    border-collapse: collapse;
+    background-color: #EFEFEF;
+    width: 95%;
+    margin: 20px auto;
+}
+
+.registrants-table thead {
+    background-color: #4B2E83;
+    text-align: left;
+}
+
+.registrants-table th {
+    color: #FFF;
+}
+
+.registrants-table td {
+    color: #000;
+}
+
+.registrants-table td, .registrants-table th {
+    border: 1px solid #DDD;
+    padding: 8px;
+}
+
+.registrants-table tbody tr:nth-child(even) {
+    background-color: #DDD;
+}
+
+.registrants-table tbody tr:hover {
+    background-color: #DDD;
+}
