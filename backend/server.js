@@ -36,7 +36,6 @@ registrantsRouter.route('/').get((req, res) => {
         if (err) {
             res.status(400).json('Error: ' + err);
         } else {
-            console.log(result);
             // Send the result 
             res.json(result);
         }
@@ -71,10 +70,37 @@ registrantsRouter.route('/add').post((req, res) => {
                 if (err) {
                     res.status(400).json('Error: ' + err);
                 } else {
-                   console.log(result);
                    res.status(200).json('Success!');
                 }
             });
+});
+
+// Send GET requests at URL endpoint './logins/' which retrieves all the data from the Logins database
+loginsRouter.route('/').get((req, res) => {
+    const query = `
+        SELECT * FROM hackuwt.logins;
+    `;
+    db.query(query, (err, result) => {
+        if (err) {
+            res.status(400).json('Error: ' + err);
+        } else {
+            res.json(result);
+        }
+    });
+});
+
+// Send GET request at URL endpoint './teams/' which retrieves all the data from the Teams database
+teamsRouter.route('/').get((req, res) => {
+    const query = `
+        SELECT * FROM hackuwt.teams;
+    `;
+    db.query(query, (err, result) => {
+        if (err) {
+            res.status(400).json('Error: ' + err);
+        } else {
+            res.json(result);
+        }
+    });
 });
 
 // Tell the server to use the files under '/routes'

@@ -1,0 +1,39 @@
+.logins-container {
+    background-color: #282C34;
+    width: 100vw;
+    height: 100vh;
+    color: #EEE;
+}
+
+.logins-table {
+    border-collapse: collapse;
+    background-color: #EFEFEF;
+    width: 95%;
+    margin: 20px auto;
+}
+
+.logins-table thead {
+    background-color: #4B2E83;
+    text-align: left;
+}
+
+.logins-table th {
+    color: #FFF;
+}
+
+.logins-table td {
+    color: #000;
+}
+
+.logins-table td, .logins-table th {
+    border: 1px solid #DDD;
+    padding: 8px;
+}
+
+.logins-table tbody tr:nth-child(even) {
+    background-color: #DDD;
+}
+
+.logins-table tbody tr:hover {
+    background-color: #DDD;
+}

@@ -129,8 +129,7 @@ const Apply = () => {
         axios.post('http://localhost:5000/registrants/add', registrant)
             .then(response => console.log(response.data));
         
-        // TODO: Redirect user to next page
-        // window.location = '/...';
+        window.location = '/registrants';
     }
 
     return (

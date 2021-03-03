@@ -1,0 +1,39 @@
+.teams-container {
+    background-color: #282C34;
+    width: 100vw;
+    height: 100vh;
+    color: #EEE;
+}
+
+.teams-table {
+    border-collapse: collapse;
+    background-color: #EFEFEF;
+    width: 95%;
+    margin: 20px auto;
+}
+
+.teams-table thead {
+    background-color: #4B2E83;
+    text-align: left;
+}
+
+.teams-table th {
+    color: #FFF;
+}
+
+.teams-table td {
+    color: #000;
+}
+
+.teams-table td, .teams-table th {
+    border: 1px solid #DDD;
+    padding: 8px;
+}
+
+.teams-table tbody tr:nth-child(even) {
+    background-color: #DDD;
+}
+
+.teams-table tbody tr:hover {
+    background-color: #DDD;
+}
